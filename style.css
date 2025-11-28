@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Navigation */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #101010, #050505);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero .title {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hero span {
+    color: #00aaff;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #00aaff;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Services */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: #111;
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #1f1f1f;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00aaff;
+}
+
+.card h3 {
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.link {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+    background: #050505;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero .title {
+        font-size: 38px;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
