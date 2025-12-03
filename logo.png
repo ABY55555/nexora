@@ -1,1 +1,4 @@
-<img src="logo.png" alt="NEXORA Logo" class="logo">
+<div class="logo">
+    <img src="logo.png" alt="NEXORA Logo">
+</div>
+
